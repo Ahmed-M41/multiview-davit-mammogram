@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Multi-View Ensemble of Dual Attention Vision Transformers for Mammogram Classification"
+version: "1.0.0"
+date-released: "2025-05-03"
+repository-code: "https://github.com/Ahmed-M41/multiview-davit-mammogram"
+license: MIT
+doi: "[ZENODO_DOI]"
+abstract: >
+  Official implementation of "A multi-view ensemble of dual attention vision transformers
+  for mammogram classification". Includes a YOLOv5-based preprocessing pipeline,
+  DaViT-Base classifier variants (single-head and two-layer-head), multi-view ensemble
+  inference, and evaluation utilities. Achieves 83.33% accuracy on CBIS-DDSM and
+  96.59% on INbreast (zero-shot).
+authors:
+  - family-names: "M."
+    given-names: "Ahmed"
+keywords:
+  - mammography
+  - breast cancer detection
+  - vision transformer
+  - DaViT
+  - multi-view ensemble
+  - deep learning
+  - medical imaging
+  - CBIS-DDSM
+  - INbreast

@@ -1,0 +1,17 @@
+cbis_ddsm:
+  raw_dir: data/raw/cbis_ddsm
+  processed_dir: data/processed/cbis_ddsm
+  splits_dir: data/splits
+  train_csv: data/splits/cbis_train.csv
+  val_csv: data/splits/cbis_val.csv
+  test_csv: data/splits/cbis_test.csv
+
+inbreast:
+  raw_dir: data/raw/inbreast
+  processed_dir: data/processed/inbreast
+  csv_path: data/splits/inbreast.csv
+
+split:
+  val_size: 0.2
+  random_state: 42
+  group_col: patient_id

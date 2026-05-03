@@ -1,0 +1,39 @@
+model:
+  backbone: davit_base.msft_in1k
+  head: two_layer
+  freeze_stages: 1
+  noise_std: 0.05
+
+optimizer:
+  type: AdamW
+  lr: 5.0e-5
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+  weight_decay: 1.0e-2
+
+scheduler:
+  type: CosineAnnealingWarmRestarts
+  T_0: 10
+  T_mult: 2
+  eta_min: 1.0e-7
+
+training:
+  batch_size: 32
+  max_epochs: 50
+  amp: true
+  grad_clip_norm: 1.0
+  input_size: 224
+  num_workers: 4
+  label_smoothing: 0.1
+  include_inbreast: true
+
+early_stopping:
+  patience: 15
+  composite:
+    acc: 0.5
+    auc: 0.2
+    f1: 0.2
+    loss: 0.1
+
+view: ALL
+checkpoint_name: davit_all_best.pth

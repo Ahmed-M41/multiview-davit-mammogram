@@ -1,0 +1,13 @@
+out_size: 512
+threshold_value: 20
+jpeg_quality: 100
+
+yolo:
+  conf: 0.25
+  iou: 0.45
+  img_size: 640
+  weights: checkpoints/yolo/best.pt
+
+clahe:
+  clip_limit: 2.0
+  tile_grid_size: [8, 8]

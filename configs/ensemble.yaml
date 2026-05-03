@@ -1,0 +1,11 @@
+checkpoints:
+  cc_spec: checkpoints/davit_cc_best.pth
+  mlo_spec: checkpoints/davit_mlo_best.pth
+  cc_all: checkpoints/davit_all_cc_best.pth
+  mlo_all: checkpoints/davit_all_mlo_best.pth
+
+inference:
+  cbis_weights: [0.25, 0.25, 0.25, 0.25]
+  inbreast_weights: [0.5, 0.5]
+  input_size: 224
+  batch_size: 32

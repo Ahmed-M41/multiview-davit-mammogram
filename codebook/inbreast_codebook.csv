@@ -1,0 +1,17 @@
+variable,code,label,description,binary_class,binary_label
+Bi-Rads,1,Negative,No abnormality found,0,Benign
+Bi-Rads,2,Benign Finding,Definitively benign finding,0,Benign
+Bi-Rads,3,Probably Benign,Short-interval follow-up suggested (<2% malignancy risk),0,Benign
+Bi-Rads,4a,Low Suspicion for Malignancy,Low suspicion (>2% but <=10%),1,Malignant
+Bi-Rads,4b,Moderate Suspicion for Malignancy,Moderate suspicion (>10% but <=50%),1,Malignant
+Bi-Rads,4c,High Suspicion for Malignancy,High suspicion (>50% but <95%),1,Malignant
+Bi-Rads,5,Highly Suggestive of Malignancy,Almost certainly malignant (>=95%),1,Malignant
+Bi-Rads,6,Known Biopsy-Proven Malignancy,Previously confirmed malignancy,1,Malignant
+View,CC,Cranio-Caudal,Top-down mammogram view,—,—
+View,MLO,Mediolateral Oblique,Angled side view (includes pectoralis muscle),—,—
+Laterality,L,Left,Left breast,—,—
+Laterality,R,Right,Right breast,—,—
+ACR,1,Almost entirely fatty,Lowest breast density,—,—
+ACR,2,Scattered fibroglandular densities,Low breast density,—,—
+ACR,3,Heterogeneously dense,High breast density (may obscure lesions),—,—
+ACR,4,Extremely dense,Highest breast density (lowest mammography sensitivity),—,—

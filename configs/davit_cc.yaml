@@ -1,0 +1,38 @@
+model:
+  backbone: davit_base.msft_in1k
+  head: single
+  freeze_stages: 1
+  noise_std: 0.05
+
+optimizer:
+  type: AdamW
+  lr: 1.0e-4
+  betas: [0.9, 0.9]
+  eps: 1.0e-7
+  weight_decay: 1.0e-2
+
+scheduler:
+  type: ReduceLROnPlateau
+  factor: 0.7
+  patience: 8
+  min_lr: 1.0e-7
+
+training:
+  batch_size: 32
+  max_epochs: 50
+  amp: true
+  grad_clip_norm: 1.0
+  input_size: 224
+  num_workers: 4
+  label_smoothing: 0.1
+
+early_stopping:
+  patience: 15
+  composite:
+    acc: 0.5
+    auc: 0.2
+    f1: 0.2
+    loss: 0.1
+
+view: CC
+checkpoint_name: davit_cc_best.pth
