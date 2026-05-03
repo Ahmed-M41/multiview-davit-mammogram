@@ -8,7 +8,7 @@ This directory holds `best.pt` — the YOLOv5 model trained to detect the breast
 bash scripts/download_yolo_weights.sh
 ```
 
-The weights are archived at Zenodo (DOI: [ZENODO_DOI]).
+The weights are archived at Zenodo (DOI: 10.5281/zenodo.20016511).
 
 ## Usage
 

@@ -4,7 +4,7 @@
 
 set -euo pipefail
 
-ZENODO_DOI="[ZENODO_DOI]"
+ZENODO_DOI="10.5281/zenodo.20016511"
 ZENODO_RECORD=$(echo "$ZENODO_DOI" | sed 's|10.5281/zenodo.||')
 URL="https://zenodo.org/record/${ZENODO_RECORD}/files/yolo_best.pt"
 

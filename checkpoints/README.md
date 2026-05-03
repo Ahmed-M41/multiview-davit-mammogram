@@ -6,7 +6,7 @@ Model weights are **not included** in the repository due to file size.
 
 All model checkpoints (.pth files) and the YOLOv5 breast detector weights are archived at Zenodo:
 
-- DOI: [ZENODO_DOI]
+- DOI: 10.5281/zenodo.20016511
 
 ### Download script
 

@@ -6,7 +6,7 @@ version: "1.0.0"
 date-released: "2025-05-03"
 repository-code: "https://github.com/Ahmed-M41/multiview-davit-mammogram"
 license: MIT
-doi: "[ZENODO_DOI]"
+doi: "10.5281/zenodo.20016511"
 abstract: >
   Official implementation of "A multi-view ensemble of dual attention vision transformers
   for mammogram classification". Includes a YOLOv5-based preprocessing pipeline,

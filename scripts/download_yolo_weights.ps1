@@ -1,7 +1,7 @@
 # Downloads YOLOv5 breast ROI detector weights from Zenodo.
 # Usage: .\scripts\download_yolo_weights.ps1
 
-$ZenodoDoi = "[ZENODO_DOI]"
+$ZenodoDoi = "10.5281/zenodo.20016511"
 $ZenodoRecord = $ZenodoDoi -replace "10.5281/zenodo.", ""
 $Url = "https://zenodo.org/record/$ZenodoRecord/files/yolo_best.pt"
 

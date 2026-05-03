@@ -168,7 +168,7 @@ See [docs/reproducibility.md](docs/reproducibility.md) for a full list of 10 dis
   title   = {A multi-view ensemble of dual attention vision transformers for mammogram classification},
   journal = {PeerJ Computer Science},
   year    = {2025},
-  doi     = {[ZENODO_DOI]},
+  doi     = {10.5281/zenodo.20016511},
 }
 ```
 
